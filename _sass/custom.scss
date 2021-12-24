@@ -1,0 +1,341 @@
+/* Footer Helper */
+html, body {
+  height: 100%;
+}
+
+#container {
+  min-height: 100%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 60px;
+}
+
+footer {
+  position: relative;
+  height: 60px;
+  margin-top: -60px;
+  clear: both;
+}
+
+// RFS
+$enable-responsive-font-sizes: true;
+$rfs-factor: 100;
+
+/* Font */
+$font-family-base: 'Roboto', sans-serif !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* Jumbotron */
+
+#jumbotron-home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(/assets/images/jumbotron-home.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 12%;
+  padding-bottom: 12%;
+}
+
+#jumbotron-news {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(/assets/images/jumbotron-news.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#jumbotron-map {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(52, 58, 64, 1)),
+  url(/assets/images/jumbotron-map.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 5%;
+  padding-bottom: 0%;
+}
+
+#jumbotron-wiki {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(52, 58, 64, 1)),
+  url(/assets/images/jumbotron-wiki.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 14%;
+  padding-bottom: 14%;
+}
+
+#jumbotron-apply {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(/assets/images/jumbotron-apply.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#jumbotron-about {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(52, 58, 64, 1)),
+  url(/assets/images/jumbotron-about.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+#jumbotron-big {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron-big-bold {
+  font-weight: 600;
+}
+
+/* Map */
+#map {
+  border-radius: 5px;
+  width: 100%;
+  overflow: hidden;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+/* Map Popout */
+#map-popout {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  max-width:100%;
+  max-height: 100%;
+}
+
+/* Navbar */
+
+#navbar.scrolled {
+  background: rgba(52, 58, 64, 1);
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+#navbar.color-changed {
+  background: rgba(52, 58, 64, 1);
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.navbar {
+  background: #444;
+  -o-transition: all .6s;
+  -moz-transition: all .6s;
+  -webkit-transition: all .6s;
+  -ms-transition: all .6s;
+  transition: all .6s;
+  backface-visibility: hidden;
+}
+
+.navbar-brand:hover {
+  color: #28A745 !important;
+}
+
+// Makes navbar transparent
+.navbar.navbar-no-bg {
+  background: #444;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+  position: relative;
+  color: white;
+}
+
+// Adds green line under active page
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(#28A745, #28A745);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+// Hover color
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #28A745;
+}
+
+/* About Section (Home)*/
+#about-server {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* News Cards */
+#posts-news {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#posts-news a {
+  color: white;
+  text-decoration: none;
+}
+
+#posts-news p a {
+  color: #28A745;
+}
+
+#posts-news img {
+  width: 100%;
+}
+
+/* Apply Section (Apply) */
+#apply-header {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#server-ip {
+  color: #28A745;
+}
+
+// Discord button
+.join {
+  width: 80%;
+  position: relative;
+  height: 200px;
+  background: #333;
+  color: white;
+  font-size: 1.12em;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 3px;
+  margin: auto;
+}
+
+.join a {
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+  background: #7289DA;
+  border: none;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
+.j {
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.join a:hover {
+  opacity: .92;
+}
+
+.join img {
+  border-radius: 100%;
+  width: 56px;
+  margin: 0 10px 0 -8px;
+  height: 56px;
+}
+
+.join span {
+  color: #ddd;
+}
+
+.discorduser {
+  /* color of you user name */
+  color: #8184d3!important;
+}
+@media only screen and (max-width: 1000px) {
+  .join img {
+    display:block;
+    margin-left:auto;
+    margin:0px auto 10px auto;
+    margin-right:auto;
+  }
+
+  .join {
+    height:auto!important;
+    max-height:auto!important;
+    align-items:center;
+    position:relative;
+    align-content:center!important;
+
+  }
+  .j {
+    height:auto;
+
+    align-content:center;
+  }
+
+  .join a {
+    left:0px;
+    margin:10px auto;
+    align-self:flex-end;
+    position:relative;
+    bottom:0px;
+    width:100%;
+  }
+}
+
+/* Buttons */
+.btn-default {
+  -webkit-appearance: none!important;
+}
+
+/* Horizontal Rule */
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  width: 50%;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+}
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+ * Bootstrap Cookie Alert by Wruczek
+ * https://github.com/Wruczek/Bootstrap-Cookie-Alert
+ * Released under MIT license
+ */
+.cookiealert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  border-radius: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+}
+
+.cookiealert.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
+.cookiealert a {
+  color: #28A745;
+  text-decoration: none;
+}
+
+.cookiealert .acceptcookies {
+  margin-left: 10px;
+  vertical-align: baseline;
+}
