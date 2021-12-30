@@ -9,7 +9,6 @@
 @media (max-width: 767px) {
 
     .navbar-expand-md .navbar-nav .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; }
-    .jumbotron { padding-top: 22% !important; }
     .navbar .navbar-collapse {
         text-align: center;
         font-size: 2rem;
